@@ -1,6 +1,8 @@
 const getFactorial = (number) => {
   if (number == 1) {
     return number;
+  } else if (number == 0) {
+    return 1;
   } else {
     return number * getFactorial(number - 1);
   }
